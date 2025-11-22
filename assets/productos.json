@@ -1,0 +1,8 @@
+[
+  { "nombre": "Bujía NGK Iridium", "marca": "NGK", "precio": 150 },
+  { "nombre": "Filtro de aceite Fram", "marca": "Fram", "precio": 120 },
+  { "nombre": "Batería Bosch 12V", "marca": "Bosch", "precio": 950 },
+  { "nombre": "Aceite sintético 5W30", "marca": "Mobil", "precio": 350 },
+  { "nombre": "Pastillas de freno Brembo", "marca": "Brembo", "precio": 800 },
+  { "nombre": "Amortiguador Monroe", "marca": "Monroe", "precio": 1200 }
+]
