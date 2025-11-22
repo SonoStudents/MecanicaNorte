@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel Mecánica del Norte</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Mecánica del Norte</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#" onclick="logout()">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <p id="welcomeMsg"></p>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Síguenos en redes sociales:</p>
+      <a href="https://facebook.com/mecanica" target="_blank">Facebook</a> |
+      <a href="https://instagram.com/mecanica" target="_blank">Instagram</a> |
+      <a href="https://twitter.com/mecanica" target="_blank">Twitter</a>
+      <p>Contacto: contacto@mecanica-del-norte.com</p>
+      <p>&copy; 2025 Mecánica del Norte. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const user = localStorage.getItem("loggedUser");
+    if (!user) window.location.href = "login.html";
+    document.getElementById("welcomeMsg").textContent = `Hola, ${user}!`;
+
+    function logout() {
+      localStorage.removeItem("loggedUser");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
